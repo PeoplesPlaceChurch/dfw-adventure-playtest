@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#193c35">
+  <title>DFW Adventure · Hype House</title>
+  <link rel="stylesheet" href="./playtest.css">
+  <script type="module" src="./playtest.js"></script>
+</head>
+<body>
+  <a class="skip" href="#play">Skip to Play</a>
+  <main>
+    <header class="masthead">
+      <h1>DFW Adventure</h1>
+      <nav aria-label="On this page"><a href="#scores">High scores</a><a href="#saves">Saves</a></nav>
+    </header>
+    <section class="game-shell" aria-label="Hype House play screen">
+      <div class="screen-bar"><span>Browser playtest</span><time datetime="2026-11-21">Nov 21, 2026</time><button id="fullscreen" hidden>Expand game</button></div>
+      <div class="game-screen" id="game-screen">
+        <div class="cover" id="start-panel">
+          <div class="cover-copy">
+            <h2>Hype<br>House</h2>
+            <p>Helper’s hiding somewhere in the house. Jason’s books are out of order. Zach’s painted doors still need finishing.</p>
+            <button id="play" disabled><span aria-hidden="true">▶</span> <span id="play-label">Loading…</span></button>
+            <p class="device" id="availability" role="status">Preparing the playtest.</p>
+          </div>
+          <div class="map"><img src="./assets/hype-house-map.png" width="640" height="832" alt="Hype House floor plan with the living room in the center and the garage on the right."></div>
+        </div>
+      </div>
+    </section>
+    <div class="controls" aria-label="Keyboard controls"><span><kbd>WASD</kbd> or <kbd>↑↓←→</kbd> Move</span><span><kbd>E</kbd> or <kbd>Space</kbd> Interact</span><span><kbd>J</kbd> Journal</span></div>
+    <p id="launch-status" role="status"></p>
+    <div class="cards">
+      <section class="card" id="scores"><h2>High scores</h2><p>This playtest is untimed. Finish the house in any order and use the journal to see what’s left.</p><p class="detail">Shared puzzle times and scores are planned.</p></section>
+      <section class="card" id="saves"><h2>Saves</h2><p>Come back to this link in the same browser and choose <strong>Continue</strong> on your character. Each character has a separate save.</p><p class="detail">“Fresh test” skips saving. Save-file upload and download are planned.</p></section>
+    </div>
+    <section class="notes">
+      <div><h2>Playtest notes</h2><p>Try Jason’s bookshelf in the living room. If a book is hard to see or a clue doesn’t make sense, send Paxston the round number and a screenshot.</p></div>
+      <figure><img src="./assets/jasons-bookshelf.jpg" loading="lazy" width="1100" height="619" alt="Jason’s wooden bookshelf with numbered gaps and five loose books to place."><figcaption>Jason’s bookshelf · art preview</figcaption></figure>
+    </section>
+  </main>
+</body>
+</html>

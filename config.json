@@ -1,0 +1,6 @@
+{
+  "title": "DFW Adventure",
+  "version": "0.3.0-browser-playtest",
+  "gamePath": "./game/index.html",
+  "leaderboardUrl": null
+}
