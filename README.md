@@ -4,4 +4,4 @@
 
 [Play the current Hype House browser test](https://peoplesplacechurch.github.io/dfw-adventure-playtest/). Desktop keyboard recommended. This public repository contains the published browser build, which may lag local development and is not yet the finished game.
 
-The current game title and design directions are maintained in the private development repository and project Google Drive. Avoid treating old on-page labels as proof that the game has retained its former name. A future web-interface update will change the player-facing page and browser metadata.
+The homepage, browser tab and character-selection screen use the current title. The playtest saves each character’s progress in the same browser.
