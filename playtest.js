@@ -1,10 +1,12 @@
 const $ = id => document.getElementById(id);
 let gameUrl;
+let gameTitle;
 try {
   const response = await fetch('./config.json', {cache: 'no-store'});
   if (!response.ok) throw new Error('Settings unavailable. Reload to try again.');
   const config = await response.json();
   if (!config.gamePath) throw new Error('The game has not been uploaded yet.');
+  gameTitle = config.title;
   gameUrl = new URL(config.gamePath, location.href);
   if (gameUrl.origin !== location.origin) throw new Error('The game must be hosted on this site.');
   $('play-label').textContent = 'Play';
@@ -18,7 +20,7 @@ $('play').addEventListener('click', () => {
   $('play').disabled = true;
   const frame = document.createElement('iframe');
   frame.id = 'game-frame';
-  frame.title = 'DFW Adventure game';
+  frame.title = gameTitle;
   frame.allow = 'autoplay; fullscreen';
   frame.allowFullscreen = true;
   frame.src = gameUrl.href;
